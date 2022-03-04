@@ -65,10 +65,6 @@ img{
     color: rgba(255, 255, 255, 0.75);
 }
 
-em{
-    color: #b61313;
-}
-
 
 
 p{
@@ -95,6 +91,11 @@ a{
     flex-direction: column;
     justify-content: center;
     box-sizing: border-box;
+}
+
+.enlightened{
+    color: #b61313;
+    text-shadow: 0 0 3px #b61313;
 }
 
 .form{
