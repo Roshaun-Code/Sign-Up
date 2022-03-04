@@ -2,12 +2,15 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Sign Up</title>
+    <title>enlighten</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div id="wallpaper">
         <p class="credit">Photo by <a href="https://unsplash.com/@remithorel?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Rémi Thorel</a> on <a href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></p>
+        <div class="logo">
+            enlighten.
+        </div>
     </div>
     <div class="section">
         <div class="top">
@@ -16,13 +19,41 @@
                 <br>
                 Sign up <em>now</em> to get started.
             </p>
-            <p>You <em>know</em> want to.</p>
+            <p>You <em>know</em> you want to.</p>
         </div>
         <div class="form">
             Lets do this!
+            <form id="form">
+                <div class="input">
+                    <label for="firstName">First name</label>
+                    <input type="text" name="firstName" id="firstName" required>
+                </div>
+                <div class="input">
+                    <label for="lastName">Last name</label>
+                    <input type="text" name="lastName" id="lastName" required>
+                </div>
+                <div class="input">
+                    <label for="emailAddress">Email</label>
+                    <input type="email" name="email" id="emailAddress" required>
+                </div>
+                <div class="input">
+                    <label for="phone">Phone number</label>
+                    <input type="text" name="phone" id="phone">
+                </div>
+                <div class="input">
+                    <label for="password">Password</label>
+                    <input type="password" name="password" id="password" required>
+                </div>
+                <div class="input">
+                    <label for="confirmPassword">Confirm password</label>
+                    <input type="password" name="confirmPassword" id="confirmPassword" required>
+                </div>
+
+            </form>
+
         </div>
         <div class="bottom">
-            <button class="create">Create Account</button>
+            <button type="submit" form="form" class="create">Create Account</button>
             <p>Already have an account? <a href="index.html">Log In</a></p>
         </div>
     </div>
